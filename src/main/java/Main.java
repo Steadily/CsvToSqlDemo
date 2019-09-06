@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        String exportSqlPath="C:\\Users\\Administrator\\Desktop\\顺网\\Test.sql";
+        String exportSqlPath=Main.class.getClassLoader().getResource("").getPath()+"t_log_0.sql";
         CsvToSqlFile.exportSqlFile("t_log_0.csv",exportSqlPath);
     }
 }
